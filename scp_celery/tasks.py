@@ -4,6 +4,6 @@ from scp_celery.celery import app
 import os
 
 @app.task
-def dowload(path):
-	cmd = "wget " + TARGET_URL
-	os.system(cmd)
+def download(path):
+    cmd = "wget " + TARGET_URL
+    os.system(cmd)
