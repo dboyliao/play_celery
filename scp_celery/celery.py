@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 from celery import Celery
-from local_settings import *
+from local_settings import BROCKER_URL, BACKEND_URL
 
 app = Celery(
 	'scp_celery',
